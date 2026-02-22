@@ -234,14 +234,15 @@
 let portfoliocards = document.getElementById("portfoliocards");
 
 class Portfolio {
-  constructor(img1, title1, text1) {
+  constructor(category, img1, title1, text1,) {
+    this.category = category;
     this.img1 = img1;
     this.title1 = title1;
     this.text1 = text1;
   }
   showPortfolio() {
     return `
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item ${this.category}">
               <div class="portfolio-content h-100">
                 <img src="${this.img1}" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -259,61 +260,73 @@ class Portfolio {
 
 let AllPortfolio = [
   new Portfolio(
+    "filter-app",
     "assets/img/portfolio/app-1.jpg",
     "App 1",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-product",
     "assets/img/portfolio/product-1.jpg",
     "Product 1",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-branding",
     "assets/img/portfolio/branding-1.jpg",
     "Branding 1",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-books",
     "assets/img/portfolio/books-1.jpg",
     "Books 1",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-app",
     "assets/img/portfolio/app-2.jpg",
     "App 2",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-product",
     "assets/img/portfolio/product-2.jpg",
     "Product 2",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-branding",
     "assets/img/portfolio/branding-2.jpg",
     "Branding 2",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-books",
     "assets/img/portfolio/books-2.jpg",
     "Books 2",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-app",
     "assets/img/portfolio/app-3.jpg",
     "App 3",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-product",
     "assets/img/portfolio/product-3.jpg",
     "Product 3",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-branding",
     "assets/img/portfolio/branding-3.jpg",
     "Branding 3",
     "Lorem ipsum, dolor sit amet consectetur",
   ),
   new Portfolio(
+    "filter-books",
     "assets/img/portfolio/books-3.jpg",
     "Books 3",
     "Lorem ipsum, dolor sit amet consectetur",

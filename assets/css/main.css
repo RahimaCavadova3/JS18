@@ -1493,6 +1493,8 @@ section,
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  height: 280px;
+  width: 100%;
 }
 
 .portfolio .portfolio-content .portfolio-info {
